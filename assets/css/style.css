@@ -104,14 +104,9 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-fill-color: transparent;
 
 }
-.logoarvore {
-  width: 12%;
-  margin-bottom:40px;
-  
-}
+ 
 
 .linkwhatsapp{
   color:#0bb148 ; /*#0CD8B3*/
@@ -125,11 +120,14 @@ body {
       rgba(240, 240, 240, 0.144),
       rgba(255, 255, 255, 0.336)
     ),
-  url("/assets/img/maisvelhosfazendoauladecanto.jpg");
+  url("/CyroLongevita/ProjetoCyroLongevita/assets/img/maisvelhosfazendoauladecanto.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+/* AJUSTAR O CAMINHO PARA HOSPEDAR
+CyroLongevita\ProjetoCyroLongevita\assets\img\maisvelhosfazendoauladecanto.jpg*/
+  
 
 .showcase-container {
   display: flex;
@@ -145,7 +143,7 @@ body {
   margin-top: 1.5em;
 }
 
-/* ......//about us//...... */
+
 
 #about {
   padding: 50px 0;
@@ -207,6 +205,8 @@ body {
   object-fit: cover;
   object-position: right;
 }
+
+
 
 /* ..........////Food category///........... */
 
@@ -552,6 +552,14 @@ body {
     font-size: 2rem;
   }
 
+.logoarvore{ width: 8%;
+  margin-bottom:40px;
+  
+}
+
+
+
+
   .navbar-container input[type="checkbox"]:checked ~ .menu-items {
     transform: translateX(0);
   }
@@ -642,6 +650,7 @@ body {
 @media (min-width: 769px) and (max-width: 1200px) {
   .img-container h3 {
     font-size: 1.5rem;
+    
   }
 
   .img-container .btn {
@@ -674,4 +683,60 @@ body {
 #whatsapp-button img {
   width: 40px; /* Tamanho do ícone do WhatsApp */
   height: auto;
+}
+div#maps{
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+}
+
+div#map1{
+  border-style: solid;
+  -webkit-box-shadow: 7px 9px 0px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 9px 0px 0px rgba(0,0,0,0.75);
+box-shadow: 7px 9px 0px 0px rgba(0,0,0,0.75);
+
+
+}
+div#map2{
+  border-style: solid;
+  -webkit-box-shadow: 7px 9px 0px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 9px 0px 0px rgba(0,0,0,0.75);
+box-shadow: 7px 9px 0px 0px rgba(0,0,0,0.75);
+
+}
+@media  (max-width: 890px){
+  div#maps{
+    flex-direction: column;
+  }
+  
+}
+@media  (max-width: 630px){
+ iframe {width: 70%;
+    
+  }
+  
+}
+
+
+
+#oficial{
+  height: auto; /* Mantém a proporção original da imagem */
+
+}
+@media (max-width: 605px) {
+  #oficial {
+       /* Ajusta a largura para 80% quando a largura da tela é 605 pixels ou mais */
+      width: 100%; /* Garante que a largura não ultrapasse 100% do contêiner pai */
+  }
+}
+#oficial2{
+  height: auto; /* Mantém a proporção original da imagem */
+
+}
+@media (max-width: 605px) {
+  #oficial2 {
+       /* Ajusta a largura para 80% quando a largura da tela é 605 pixels ou mais */
+      width: 100%; /* Garante que a largura não ultrapasse 100% do contêiner pai */
+  }
 }

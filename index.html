@@ -33,9 +33,9 @@
           <li><a href="#contact">Contato</a></li>
         </ul>
        
-        <h1 class="logo">LONGEVITÁ</h1>
-        <img src="assets/img/logooficialSemfundo.png" class="logoarvore" alt="">
-        
+        <h1 class="logo">LONGEVITÁ
+        </h1 >
+       
       </div>
     </nav>
     <section class="showcase-area" id="showcase">
@@ -56,7 +56,7 @@
           </p>
         </div>
         <div class="about-img">
-          <img src="assets/img/logooficial.jpeg" alt="enfermeira auxiliando idosos" />
+          <img src="assets/img/logooficial.jpeg" alt="enfermeira auxiliando idosos"  id="oficial"/>
         </div>
       </div>
     </section>
@@ -65,7 +65,7 @@
       <div class="food-container container">
         <div class="food-type fruite">
           <div class="img-container">
-            <img src="assets/img/ambulancia2.png" alt="imagem de uma ambulancia" />
+            <img src="assets/img/ambulanciaOFICIAL.png" alt="imagem de uma ambulancia" />
             <div class="img-content">
               <h3>HomeCare</h3>
               <a
@@ -93,7 +93,7 @@
         </div>
         <div class="food-type grin">
           <div class="img-container">
-            <img src="assets/img/logooficialSemfundo.png" alt="profissionais da Saúde" />
+            <img src="assets/img/LOGOOFICIAL.png" alt="profissionais da Saúde" />
             <div class="img-content">
               <h3>Centro Dia </h3>
               <a
@@ -256,70 +256,40 @@
     <section id="contact">
       <div class="contact-container container">
         <div class="contact-img">
-          <img src="assets/img/logooficial.jpeg" alt="" />
+          <img src="assets/img/logooficial.jpeg" id="oficial2" alt=""  >
         </div>
 
         <div class="form-container">
           <h2>Fale conosco</h2>
-          <input type="text" placeholder="Seu Nome" />
-          <input type="email" placeholder="E-Mail" />
+          <input type="text" placeholder="Seu Nome" id="nome" />
+          <input type="email" placeholder="E-Mail" id="email" />
           <textarea
             cols="30"
             rows="6"
-            placeholder="Digite sua mensagem"
+            placeholder="Digite sua mensagem" id="mensagem"
           ></textarea>
-          <a href="#" class="btn btn-primary">Enviar</a>
+          <button onclick="gerarLinkEmail()" class="btn btn-primary" id="enviar">Enviar</button >
         </div>
       </div>
     </section>
-
-
-
-
-    <section id="contact">
-      <div class="contact-container container">
-        <div class="contact-img">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.9637134634127!2d-47.84758152572248!3d-23.353329153980376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5d9ea2c1bac11%3A0xda792a4e8baab22e!2sLongevit%C3%A1%20Centro%20Dia%2060%2B!5e0!3m2!1spt-BR!2sbr!4v1705673146087!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-        <div class="form-container"> 
-          <h2>Centro Dia</h2>
-          <input type="text" placeholder="Seu Nome" />
-          <input type="email" placeholder="E-Mail" />
-          <textarea
-            cols="30"
-            rows="6"
-            placeholder="Digite sua mensagem"
-          ></textarea>
-          <a href="#" class="btn btn-primary">Enviar</a>
-        </div>
+    <div id="maps">
+      <div id="map1">
+       <h2 class="testimonial-title">CENTRO DIA</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1295.0535907577566!2d-47.845980456766064!3d-23.353293265920595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5d9ea2c1bac11%3A0xda792a4e8baab22e!2sLongevit%C3%A1%20Centro%20Dia%2060%2B!5e0!3m2!1spt-BR!2sbr!4v1706037972478!5m2!1spt-BR!2sbr" width="600" height="450" style="border: 10px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
-    </section>
-
-    <section id="contact">
-      <div class="contact-container container">
-        <div class="contact-img">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.9637134634127!2d-47.84758152572248!3d-23.353329153980376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5d9ea2c1bac11%3A0xda792a4e8baab22e!2sLongevit%C3%A1%20Centro%20Dia%2060%2B!5e0!3m2!1spt-BR!2sbr!4v1705673146087!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-        <div class="form-container">
-          <h2> Residencial Sênior</h2>
-          <input type="text" placeholder="Seu Nome" />
-          <input type="email" placeholder="E-Mail" />
-          <textarea
-            cols="30"
-            rows="6"
-            placeholder="Digite sua mensagem"
-          ></textarea>
-          <a href="#" class="btn btn-primary">Enviar</a>
-        </div>
+      <div id="map2">
+        <h2 class="testimonial-title">RESIDENCIAL</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1295.0535907577566!2d-47.845980456766064!3d-23.353293265920595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5d9ea2c1bac11%3A0xda792a4e8baab22e!2sLongevit%C3%A1%20Centro%20Dia%2060%2B!5e0!3m2!1spt-BR!2sbr!4v1706037972478!5m2!1spt-BR!2sbr" width="600" height="450" style="border: 10px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
-    </section>
-
-
-
+     
+    
+    </div>
+    
     <footer id="footer">
       <h2>Capalbo&copy; all rights reserved</h2>
+   
     </footer>
     
     <div id="whatsapp-button">
@@ -333,6 +303,7 @@
   </body>
   <!-- 
     .................../ JS Code for smooth scrolling /...................... -->
+    <script src="assets/js/email.js"></script>
 <script src="assets/js/script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
